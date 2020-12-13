@@ -1,7 +1,7 @@
 package id.ac.its.CollisionDetection;
 
 public class Alien extends Sprite {
-
+	
 	private final int INITIAL_X = 400;
 
     public Alien(int x, int y) {
@@ -24,5 +24,5 @@ public class Alien extends Sprite {
 
         x -= 1;
     }
-	
+
 }
