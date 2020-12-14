@@ -1,6 +1,6 @@
 # Collision
 
-alam game ini terdapat clas sebagai berikut:
+Dalam game ini terdapat clas sebagai berikut:
 1. Sprite Class
 	Kelas ini akan menjadi super class dari kelas space ship, alien dan missile
 	method yang ada di kelas ini adalah:
@@ -91,6 +91,8 @@ alam game ini terdapat clas sebagai berikut:
 			Method untuk mengeksekusi permainan
 	
 Class Diagram Image
-
+![](img/Pogram.jpg)
 
 Running Program Image
+
+![](img/StarUML.jpg)
