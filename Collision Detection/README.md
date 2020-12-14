@@ -2,7 +2,7 @@
 
 Dalam game ini terdapat clas sebagai berikut:
 
-- <a href="#Sprite Class"> Sprite Class </a>
+- <a href="Sprite Class"> Sprite Class </a>
 - <a href="#SpaceShip Class (extends Sprite)"> SpaceShip Class (extends Sprite) </a>
 - <a href="#Alien Class"> Alien Class </a>
 - <a href="#Missile Class"> Missile Class </a>
