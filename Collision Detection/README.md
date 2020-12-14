@@ -1,4 +1,4 @@
-#Collision
+# Collision
 
 alam game ini terdapat clas sebagai berikut:
 1. Sprite Class
