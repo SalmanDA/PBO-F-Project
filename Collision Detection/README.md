@@ -9,7 +9,7 @@ Dalam game ini terdapat clas sebagai berikut:
 - <a href="#Board Class (extends JPanel implements ActionListener)"> Board Class (extends JPanel implements ActionListener) </a>
 - <a href="#CollisionEx (extends JFrame)"> CollisionEx (extends JFrame) </a>
 
-# 1. Sprite Class
+## 1. Sprite Class
 	Kelas ini akan menjadi super class dari kelas space ship, alien dan missile
 	method yang ada di kelas ini adalah:
 		1. <Construstor> sprite 
@@ -27,7 +27,7 @@ Dalam game ini terdapat clas sebagai berikut:
 		7. isVisible 
 			Untuk mengetahui apakah gambar tersebut dalam mode visible atau tidak
 		8. getBound 
-# 2. SpaceShip Class (extends Sprite)
+## 2. SpaceShip Class (extends Sprite)
 	Kelas ini digunakan untuk membuat dan mengatur objek pesawat ruang angkasa yang akan kita kendalikan
 	Objek dalam kelas ini:
 		1. Missiles
@@ -44,7 +44,7 @@ Dalam game ini terdapat clas sebagai berikut:
 			Digunakan untuk menambahkan satu misil ketika user memberikan perintah untuk menembak
 		6. keyRealeased
 			Mengatur space ship agar diam saat tidak ada perintah dari user
-# 3. Alien Class (extends Sprite)
+## 3. Alien Class (extends Sprite)
 	Kelas ini digunakan membuat dan mengatur pergerakan objek alien
 	Method:
 		1. <Constructor> Alien
@@ -53,7 +53,7 @@ Dalam game ini terdapat clas sebagai berikut:
 			Menampilkan gambar alien
 		3. move
 			Untuk mengatur gerakan setiap alien dan membuat alien kembali ke sisi kanan layar saat alien mencapai sisi kiri layar
-# 4. Missile Class (extends Sprite)
+## 4. Missile Class (extends Sprite)
 	Kelas ini digunakan untuk membuat 
 	Method:
 		1. <constructor> Missile
@@ -62,7 +62,7 @@ Dalam game ini terdapat clas sebagai berikut:
 			Menampilkan gambar misil
 		3. move
 			Menggerakkan misil sesuai dengan kecepatan yang telah ditentukan
-# 5. Board Class (extends JPanel implements ActionListener)
+## 5. Board Class (extends JPanel implements ActionListener)
 	Kelas ini berfungsi untuk mengatur dan menginisialisasi hal-hal yang ada pada tampilan permainan
 	Method:
 		1. pos
@@ -90,7 +90,7 @@ Dalam game ini terdapat clas sebagai berikut:
 			jika tidak, maka keluarkan pesan game over
 		12. checkCollsion
 			Untuk mengecek apakah terdapat tabrakan atau tidak
-# 6. CollisionEx (extends JFrame)
+## 6. CollisionEx (extends JFrame)
 	Main Class yang digunakan untuk mengeksekusi jalannya program
 	Method:
 		1. <Constructor> CollisionEx dan initUI
