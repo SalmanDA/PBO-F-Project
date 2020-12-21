@@ -24,4 +24,4 @@
    event mouse dari method yang ditambahkan pada kelas space ship
 
 ### Link Video Demonstrasi
-   https://www.youtube.com/watch?v=LLodC96cVmg&ab_channel=RizkyWidodo
+   https://youtu.be/EDqlBb-ptfo
