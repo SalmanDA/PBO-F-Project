@@ -9,7 +9,8 @@ public class Head extends Sprite {
 	char direction = 'R';
 	boolean running = true;
 //	private MyRectangle[] body;
-	Body bodyParts[] = new Body[GamePanel.GAME_UNITS];
+//	Body bodyParts[] = new Body[GamePanel.GAME_UNITS];
+	Body[] bodyParts;
 	int bodyLength = 10;
 	
 
@@ -28,17 +29,28 @@ public class Head extends Sprite {
 			bodyParts[i] = new Body(x-GamePanel.UNIT_SIZE, y-GamePanel.UNIT_SIZE);
 		}
 	}
+	
+	public void grow() {
+		bodyLength++;
+		
+//		bodyParts[bodyLength] = new Body(bodyParts[bodyLength-1].getX(),bodyParts[bodyLength-1].getY());
+//		bodyParts[bodyLength].setX(bodyParts[bodyLength - 1].getX());
+//		bodyParts[bodyLength].setY(bodyParts[bodyLength - 1].getY());
+	}
 
 	public void move() {
-		for (int i = bodyLength - 1; i > 0; i--) {
+		for (int i = bodyLength - 1; i >= 0; i--) {
 
+//			System.out.println("stop"+i);
 			if (i == 0) {
 				bodyParts[i].setX(x);
 				bodyParts[i].setY(y);
+//				System.out.println("stop"+i+"x"+x+"y"+y);
 			} else {
 				bodyParts[i].setX(bodyParts[i - 1].getX());
 				bodyParts[i].setY(bodyParts[i - 1].getY());
 			}
+//			System.out.println("stop"+i);
 			
 //			bodyParts[i] = bodyParts[i].setX(bodyParts[i-1].getX());
 //			bodyParts[i].x = bodyParts[i].setX(bodyParts[i-1].getX());
@@ -64,8 +76,9 @@ public class Head extends Sprite {
 	public boolean checkCollisions() {
 		// checks if head collides with body
 		for (int i = bodyLength - 1; i >= 0; i--) {
+//			System.out.println("stop"+i);
 			if (x == bodyParts[i].getX() && y == bodyParts[i].getY()) {
-				System.out.println("stop0");
+//				System.out.println("stop"+i);
 				running = false;
 			}
 		}
