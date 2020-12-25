@@ -22,3 +22,6 @@
 
 1. Dilakukan penyesuaian pada class TAdapter. Jika sebelumnya terdapat method-method untuk melakukan event pada keyboard, diubah menjadi method untuk malakukan
    event mouse dari method yang ditambahkan pada kelas space ship
+
+### Link Video Demonstrasi
+   https://youtu.be/EDqlBb-ptfo
