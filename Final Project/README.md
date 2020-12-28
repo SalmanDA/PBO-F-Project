@@ -15,3 +15,5 @@ Memungkinakna pemain untuk mengganti warna atau pola tubuh ular yang dikendalika
 Semakin tinggi level yang dipilih, semakin cepat Gerakan ular dan akan semakin sulit dikendalikan. Jika memungkinkan, akan ada tambahan tembok penghalang untuk mempersempit ruang gerak ular.
 3.	Adanya racun/ranjau
 Jika yang dimakan adalah racun, maka akan mengurangi poin yang telah didapatkan atau menyebabkan game over
+4. Adanya AppleMagic
+Jika memakan AppleMagic highscore akan dikalikan menjadi 2x lipat dari biasanya namun mempunyai batas waktu
