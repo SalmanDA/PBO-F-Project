@@ -39,7 +39,7 @@ Berfungsi untuk memunculkan Magic Apple yang jika berhasil dimakan, akan mendapa
 Membuat ibjek racun yang jika dimakan, akan menyebabkan turunnya skor yang telah didapatkan namun panjang tubuh ular akan tetap. Sehingga mengurangi jumlah skor maksimal yang akan didapatkan olehh pemain. Objek ini juga memiliki Batasan waktu untuk muncul dan hanya muncul dengan persentase tertentu saja.
 
 Class Diagram Image
-![](Snake UML Umum.jpg)
+![](Snake%20UML%20Umum.jpg)
 
 ### Refrensi
 http://zetcode.com/javagames/snake/
