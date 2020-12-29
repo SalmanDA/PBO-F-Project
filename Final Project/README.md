@@ -15,3 +15,19 @@ Memungkinakna pemain untuk mengganti warna atau pola tubuh ular yang dikendalika
 Semakin tinggi level yang dipilih, semakin cepat Gerakan ular dan akan semakin sulit dikendalikan. Jika memungkinkan, akan ada tambahan tembok penghalang untuk mempersempit ruang gerak ular.
 3.	Adanya racun/ranjau
 Jika yang dimakan adalah racun, maka akan mengurangi poin yang telah didapatkan atau menyebabkan game over
+
+### Class
+1.	Menu
+Tampilan awal sebelum memulai permainan dan tempat memilih tampilan dari ular yang dikendalikan dan tingkatan level.
+2.	Apple
+Dibuat untuk membuat apel sebagai makanan ular
+3.	Body
+Untuk membuat bagian-bagian tubuh ular. Jika tubuh ular semakin Panjang, maka akan dibuat objek body lagi untuk menambah konponen tubuh.
+4.	Head
+Objek dari class Head ini lah yang akan kita kendalikan, dan objek bagian-bagian tubuhnya akan mengikuti gerakan dari objek  Head ini.
+5.	Sprite
+Sebagai super class dari kelas Apple, Body, head, Magic Apple, dan Poison.
+6.	Game Panel
+Class yang berfungsi sebagai pengatur jalannya permainan.
+7.	Snake Game
+Main class untuk menjalankan program.
