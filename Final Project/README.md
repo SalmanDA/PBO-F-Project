@@ -15,6 +15,8 @@ Memungkinakna pemain untuk mengganti warna atau pola tubuh ular yang dikendalika
 Semakin tinggi level yang dipilih, semakin cepat Gerakan ular dan akan semakin sulit dikendalikan. Jika memungkinkan, akan ada tambahan tembok penghalang untuk mempersempit ruang gerak ular.
 3.	Adanya racun/ranjau
 Jika yang dimakan adalah racun, maka akan mengurangi poin yang telah didapatkan atau menyebabkan game over
+4. Adanya AppleMagic
+Jika memakan AppleMagic highscore akan dikalikan menjadi 2x lipat dari biasanya namun mempunyai batas waktu
 
 ### Class
 1.	Menu
@@ -31,3 +33,13 @@ Sebagai super class dari kelas Apple, Body, head, Magic Apple, dan Poison.
 Class yang berfungsi sebagai pengatur jalannya permainan.
 7.	Snake Game
 Main class untuk menjalankan program.
+5.	Magic Apple
+Berfungsi untuk memunculkan Magic Apple yang jika berhasil dimakan, akan mendapat skor dua kali lipat apel biasa. Kemunculan Magic Apple ini memiliki Batasan waktu dan persentasi ter tentu untuk muncul.
+6.	Poison
+Membuat ibjek racun yang jika dimakan, akan menyebabkan turunnya skor yang telah didapatkan namun panjang tubuh ular akan tetap. Sehingga mengurangi jumlah skor maksimal yang akan didapatkan olehh pemain. Objek ini juga memiliki Batasan waktu untuk muncul dan hanya muncul dengan persentase tertentu saja.
+
+Class Diagram Image
+![](Snake UML Umum.jpg)
+
+### Refrensi
+http://zetcode.com/javagames/snake/
