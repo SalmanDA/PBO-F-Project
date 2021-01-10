@@ -1,4 +1,4 @@
-package id.ac.its.SnakeLagi;
+package id.ac.its.Snake;
 
 import javax.swing.JFrame;
 
@@ -6,7 +6,6 @@ public class GameFrame extends JFrame {
 
 	GameFrame() {
 
-		this.add(new GamePanel());
 		this.setTitle("Snake");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
