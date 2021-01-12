@@ -34,12 +34,13 @@ Class yang berfungsi sebagai pengatur jalannya permainan.
 7.	Snake Game
 Main class untuk menjalankan program.
 5.	Magic Apple
-Berfungsi untuk memunculkan Magic Apple yang jika berhasil dimakan, akan mendapat skor dua kali lipat apel biasa. Kemunculan Magic Apple ini memiliki Batasan waktu dan persentasi ter tentu untuk muncul.
+Berfungsi untuk memunculkan Magic Apple yang jika berhasil dimakan, akan mendapat skor 10 point. Kemunculan Magic Apple ini memiliki Batasan waktu dan persentasi ter tentu untuk muncul.
 6.	Poison
-Membuat ibjek racun yang jika dimakan, akan menyebabkan turunnya skor yang telah didapatkan namun panjang tubuh ular akan tetap. Sehingga mengurangi jumlah skor maksimal yang akan didapatkan olehh pemain. Objek ini juga memiliki Batasan waktu untuk muncul dan hanya muncul dengan persentase tertentu saja.
+Membuat objek racun yang jika dimakan akan menyebabkan turunnya skor sebesar 5 point, namun panjang tubuh ular akan tetap. Objek ini juga memiliki Batasan waktu untuk muncul dan hanya muncul dengan persentase tertentu saja, serta kemunculan racun ada 5 buah racun.
 
 Class Diagram Image
-![](Snake%20UML%20Umum.jpg)
+![]()
 
 ### Refrensi
 http://zetcode.com/javagames/snake/
+http://forum.codecall.net/topic/50071-making-a-simple-high-score-system/
