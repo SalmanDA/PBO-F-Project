@@ -4,19 +4,32 @@ import java.awt.event.KeyEvent;
 
 public class Head extends Sprite {
 
+	//Atribut
 	char direction = 'R';
 	boolean running = true;
-// private MyRectangle[] body;
-	Body bodyParts[] = new Body[GamePanel.GAME_UNITS];
-// Body[] bodyParts;
-	int bodyLength = 4;
 
+	Body bodyParts[] = new Body[GamePanel.GAME_UNITS];
+
+	private int bodyLength = 4;
+	
+	//Untuk mendapatkan panjang badan ular
+	public int getBodyLength() {
+		return bodyLength;
+	}
+	
+	//Untuk mengubah panjang tubuh ular
+	public void setBodyLength(int bodyLength) {
+		this.bodyLength = bodyLength;
+	}
+	
+	//Constructor
 	public Head(int x, int y) {
 		super(x, y);
 		// TODO Auto-generated constructor stub
 		initHead();
 	}
 
+	//Untuk memuat gambar kepala ular dan dimensinya
 	private void initHead() {
 		loadImage("img/snakeHead.png");
 		getImageDimensions();
@@ -27,14 +40,15 @@ public class Head extends Sprite {
 		}
 	}
 
+	//Untuk mentrack dan menambah panjang ular
 	public void grow() {
 		bodyLength++;
 		bodyParts[bodyLength - 1] = new Body(x, y);
 	}
 
+	//Agar ular dapat bergerak dengan arah
 	public void move() {
 		for (int i = bodyLength - 1; i >= 0; i--) {
-//   System.out.println(i);
 			if (i == 0) {
 				bodyParts[i].setX(x);
 				bodyParts[i].setY(y);
@@ -42,9 +56,6 @@ public class Head extends Sprite {
 				bodyParts[i].setX(bodyParts[i - 1].getX());
 				bodyParts[i].setY(bodyParts[i - 1].getY());
 			}
-
-//   bodyParts[i] = bodyParts[i].setX(bodyParts[i-1].getX());
-//   bodyParts[i].x = bodyParts[i].setX(bodyParts[i-1].getX());
 
 		}
 
@@ -64,33 +75,32 @@ public class Head extends Sprite {
 		}
 	}
 
+	//Untuk men-check apakah ada tabrakan
 	public boolean checkCollisions() {
-//  System.out.println(x+" "+y);
 		// checks if head collides with body
 		for (int i = bodyLength - 1; i >= 0; i--) {
 			if (x == bodyParts[i].getX() && y == bodyParts[i].getY()) {
-//    System.out.println(x+" "+y);
 				running = false;
 			}
 		}
 		// check if head touches left border
 		if (x < 0) {
-//   System.out.println("stop1"+x);
+
 			running = false;
 		}
 		// check if head touches right border
 		if (x >= GamePanel.SCREEN_WIDTH) {
-//   System.out.println("stop2");
+
 			running = false;
 		}
 		// check if head touches top border
 		if (y < 0) {
-//   System.out.println("stop3");
+
 			running = false;
 		}
 		// check if head touches bottom border
 		if (y >= GamePanel.SCREEN_HEIGHT) {
-//   System.out.println("stop4");
+
 			running = false;
 		}
 
@@ -98,6 +108,7 @@ public class Head extends Sprite {
 
 	}
 
+	//Untuk men-check apabila tombol tertekan 
 	public void keyPressed(KeyEvent e) {
 		switch (e.getKeyCode()) {
 		case KeyEvent.VK_LEFT:
